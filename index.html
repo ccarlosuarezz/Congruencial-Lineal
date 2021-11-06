@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="square.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Congruencial Lineal</title>
+</head>
+<body>
+    <h1>Método Congruencial Lineal Mixto</h1>
+    <div class="form_container">
+        <div class="form">
+            <input type="number" name="seed_value" id="input_seed" autocomplete="off" required/>
+            <label for="seed_value" class="label_input">
+                <span class="content_input">Semilla</span>
+            </label>
+        </div>
+        <div class="form">
+            <input type="number" name="module_value" id="input_module" autocomplete="off" required/>
+            <label for="module_value" class="label_input">
+                <span class="content_input">Modulo</span>
+            </label>
+        </div>
+        <div class="form">
+            <input type="number" name="multiplier_value" id="input_multiplier" autocomplete="off" required/>
+            <label for="multiplier_value" class="label_input">
+                <span class="content_input">Multiplicador</span>
+            </label>
+        </div>
+        <div class="form">
+            <input type="number" name="increment_value" id="input_increment" autocomplete="off" required/>
+            <label for="increment_value" class="label_input">
+                <span class="content_input">Incremento</span>
+            </label>
+        </div>
+        <button id="button" class="generate_button">
+            <strong>Generar</strong>
+        </button>
+    </div>
+    <div class="table_container">
+        <table>
+            <thead>
+                <tr>
+                    <th>n</th>
+                    <th>X<sub>n</sub></th>
+                    <th>m</th>
+                    <th>a</th>
+                    <th>c</th>
+                    <th>Congruencial</th>
+                    <th>Pseudoaleatorio</th>
+                </tr>
+            </thead>
+            <tbody id="random_list">
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p id="quantity" class="quantity"><strong>Pseudoaleatorios generados: 0</strong></p>
+    <script src="congruencial_lineal.js"></script>
+</body>
+</html>
