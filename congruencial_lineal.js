@@ -45,41 +45,9 @@ function linealCongruential() {
     } else {
         window.alert('Hay valores sin completar');
     }
-
-    // if (seed.length >= MIN_SEED_LENGTH)  {
-    //     if (squares <= `${seed*seed}`.length) {
-    //         randomList.innerHTML = '';
-    //         let seedReference = seed;
-    //         let period_list = [];
-    //         let i = 0;
-    //         while (`${seedReference*seedReference}`.length >= squares) {
-    //             let meanSquares = getMeanSquares(seedReference, squares);
-    //             if (period_list.length !== 0) {
-    //                 if (period_list.includes(meanSquares)) {
-    //                     break;
-    //                 }
-    //             }
-    //             if (parseInt(meanSquares) !== 0) {
-    //                 period_list.push(meanSquares);
-    //                 let newRandom = meanSquares / Math.pow(10, 4);
-    //                 showNewRandom(i, seedReference, meanSquares, newRandom);
-    //                 seedReference = parseInt(meanSquares);
-    //                 i++;
-    //             } else {
-    //                 break;
-    //             }
-    //         }
-    //         quantity.innerHTML = '<strong>Pseudoaleatorios generados: ' + i + '</strong>';
-    //     } else {
-    //         window.alert('La cantidad de cuadrados medios es muy grande');
-    //     }
-    // } else {
-    //     window.alert(`El numero ingresado tiene menos de ${MIN_SEED_LENGTH} digitos`);
-    // }
 }
 
 function showResult(n, x, m, a, c, congruential, pseudoaleatorio) {
-    //console.log(`n:${n} x:${x} m:${m} a:${a} c:${c} congru:${congruential} pseudo:${pseudoaleatorio}`);
     const newRow = document.createElement('tr');
     const td_n = document.createElement('td');
     const td_x = document.createElement('td');
